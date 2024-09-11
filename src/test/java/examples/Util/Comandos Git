@@ -16,6 +16,9 @@ Usa git add . para agregar todos los archivos modificados.
 git commit -m "mensaje"
 Guarda los cambios en el historial del repositorio con un mensaje descriptivo.
 
+Primera vez haciendo push a una nueva rama:
+Si es la primera vez que haces push a una nueva rama, utiliza el flag -u para establecer el rastreo de la rama remota:
+git push -u origin nombre-de-la-rama
 git push
 Envía los cambios confirmados (commits) al repositorio remoto.
 
