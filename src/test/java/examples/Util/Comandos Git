@@ -1,0 +1,116 @@
+Comandos Básicos de Git
+
+git init
+Inicializa un nuevo repositorio Git en el directorio actual.
+
+git clone <url>
+Clona (copia) un repositorio remoto a tu máquina local.
+
+git status
+Muestra el estado de los archivos en el directorio de trabajo y el área de preparación.
+
+git add <archivo>
+Agrega un archivo específico al área de preparación (staging area).
+Usa git add . para agregar todos los archivos modificados.
+
+git commit -m "mensaje"
+Guarda los cambios en el historial del repositorio con un mensaje descriptivo.
+
+git push
+Envía los cambios confirmados (commits) al repositorio remoto.
+
+git pull
+Descarga los cambios del repositorio remoto y los fusiona con tu rama local.
+
+git fetch
+Descarga los cambios del repositorio remoto, pero no los fusiona automáticamente.
+
+git merge <rama>
+Fusiona la rama especificada con la rama actual.
+
+git branch
+Lista todas las ramas en tu repositorio y muestra la rama activa.
+
+git branch <nombre-rama>
+Crea una nueva rama.
+
+git checkout <nombre-rama>
+Cambia a la rama especificada.
+Usa git checkout -b <nombre-rama> para crear y cambiar a una nueva rama al mismo tiempo.
+
+git log
+Muestra el historial de commits del repositorio.
+
+git diff
+Muestra las diferencias entre los archivos modificados y los archivos confirmados.
+
+git reset <archivo>
+Elimina un archivo del área de preparación.
+
+git rm <archivo>
+Elimina un archivo del repositorio y del sistema de archivos.
+
+git stash
+Guarda temporalmente los cambios en un "stash" (almacén temporal) y limpia el directorio de trabajo.
+
+git stash apply
+Aplica los cambios guardados en el último "stash".
+
+git remote -v
+Muestra todas las conexiones remotas del repositorio.
+
+git remote add <nombre> <url>
+Añade un nuevo repositorio remoto con el nombre especificado.
+
+git tag <nombre-tag>
+Crea una etiqueta (tag) en el último commit.
+
+git show <nombre-tag>
+Muestra información sobre una etiqueta específica.
+
+git rebase <rama>
+Reaplica tus cambios confirmados sobre la rama especificada, moviendo la base de tus commits.
+
+git revert <commit>
+Deshace un commit específico creando un nuevo commit que invierte los cambios.
+
+Comandos Avanzados de Git
+git cherry-pick <commit>
+Aplica un commit específico de otra rama a la rama actual.
+
+git bisect
+Utiliza una búsqueda binaria para encontrar el commit que introdujo un error.
+
+git blame <archivo>
+Muestra qué commit y autor modificó cada línea de un archivo.
+
+git reflog
+Muestra un historial de referencias (commits, ramas, etc.) movidas en el repositorio.
+
+git archive
+Crea un archivo comprimido de los archivos del proyecto en una revisión específica.
+
+git gc
+Ejecuta tareas de mantenimiento y limpieza en el repositorio para optimizar su tamaño y rendimiento.
+
+git clean
+Elimina archivos no rastreados (no añadidos al repositorio) del directorio de trabajo.
+
+git submodule
+Maneja los submódulos (repositorios dentro de otros repositorios).
+
+git config
+Configura las opciones de usuario de Git (como nombre de usuario y correo electrónico).
+
+git mv <archivo-origen> <archivo-destino>
+Mueve o renombra un archivo y actualiza el índice de Git.
+
+Comandos de Configuración y Ayuda
+git config --global user.name "Nombre"
+Configura el nombre de usuario para todos los repositorios locales.
+
+git config --global user.email "email@ejemplo.com"
+Configura el correo electrónico del usuario para todos los repositorios locales.
+
+git help <comando>
+Muestra la ayuda detallada de un comando específico de Git.
